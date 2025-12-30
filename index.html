@@ -68,21 +68,41 @@
       </div>
 
       <div class="item">
-        <h3>Project / Theme A</h3>
-        <p class="muted">1-line “what it is” + “why it matters”.</p>
+        <h3>Topocloud: Getting Datacenter Network Experiments Into the Right Shape</h3>
+        <p class="muted">Use a Tofino switch as a configurable “virtual wire” / L2 fabric to realize desired 
+          experiment topologies without physical rewiring.</p>
         <ul>
-          <li>Contribution or result #1 (quantify if possible).</li>
-          <li>Contribution or result #2.</li>
-          <li>Artifacts: <a href="#">paper</a> · <a href="#">code</a> · <a href="#">talk</a></li>
+          <li>Datacenter topology strongly affects latency, bisection bandwidth, where 
+            congestion happens, and failure tolerance, but it’s hard to control topology in 
+            experiments (you usually get “whatever topology exists,” and rewiring doesn’t scale).
+          </li>
+          <li>A shared public testbed where experimenters can reconfigure topology on demand, 
+            iterating across topologies as easily as they iterate across host counts.</li>
+          <li>Artifacts: <a href="https://ieeexplore.ieee.org/abstract/document/10858558">paper</a> </li>
         </ul>
       </div>
 
       <div class="item">
-        <h3>Project / Theme B</h3>
-        <p class="muted">Another short summary.</p>
+        <h3>A Measurement Framework for P4 Processing Latency on FPGA-based SmartNICs</h3>
+        <p class="muted">Measuring P4 dataplane latency on FPGA SmartNICs is hard because many 
+          FPGA NICs don’t expose a host-visible PHC and PTP sync can be unreliable/complex.</p>
         <ul>
-          <li>Key idea / system / method.</li>
-          <li>Evaluation setting.</li>
+          <li>Designed and developed a PHC-free, clock-independent RTT measurement prototype: route packets 
+            through controlled loopback paths so they return to the same sender machine, 
+            enabling RTT measurement without synchronized clocks.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Tofino-Dummynet</h3>
+        <p class="muted">Dummynet versions were developed for Wide Area Networks (WAN) but were 
+          never developed for Datacenter Networks. There are FreeBSD based in-kernel implementations 
+        that supported ms range latencty at lower throughpout</p>
+        <ul>
+          <li>Developed a Tofino version of Dummynet with more precise latency manipulation of packets at near line rate 
+            latency.
+          </li>
         </ul>
       </div>
     </section>
@@ -95,25 +115,14 @@
         <h2>Publications</h2>
         <a class="to-top" href="#top" aria-label="Back to top">↑</a>
       </div>
-
-      <p class="muted">Reverse chronological. Add PDF/code links.</p>
-
+      
       <ol class="pubs">
         <li>
-          <div class="pub-title">Paper Title</div>
-          <div class="pub-authors">Your Name, Coauthor, …</div>
-          <div class="pub-venue">Conference/Journal, Year</div>
+          <div class="pub-title">Poster: Topocloud: Getting Datacenter Network Experiments Into the Right Shape</div>
+          <div class="pub-authors">Pavani Kuppili; Aleksander Maricq; Brent E. Stephens; Ryan Stutsman; Robert Ricci</div>
+          <div class="pub-venue">ICNP, 2024</div>
           <div class="pub-links">
-            <a href="#">PDF</a> · <a href="#">BibTeX</a> · <a href="#">Code</a>
-          </div>
-        </li>
-
-        <li>
-          <div class="pub-title">Another Paper</div>
-          <div class="pub-authors">…</div>
-          <div class="pub-venue">…</div>
-          <div class="pub-links">
-            <a href="#">PDF</a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/10858558">paper</a> 
           </div>
         </li>
       </ol>
