@@ -1,0 +1,113 @@
+:root {
+  --maxw: 920px;
+  --pad: 18px;
+  --border: #ddd;
+  --muted: #666;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 24px var(--pad);
+  max-width: var(--maxw);
+  margin-inline: auto;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+  color: #111;
+  background: #fff;
+}
+
+a { color: inherit; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+
+.header {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.avatar {
+  width: 92px; height: 92px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+h1 { margin: 0 0 6px; font-size: 2rem; }
+.subtitle { margin: 0 0 6px; }
+.meta { margin: 0; opacity: 0.9; }
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin: 10px 0 16px;
+}
+.nav a.active { text-decoration-thickness: 3px; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 18px 0;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+h2 { margin: 0; font-size: 1.35rem; }
+h3 { margin: 12px 0 6px; font-size: 1.05rem; }
+
+.muted { color: var(--muted); }
+.to-top { text-decoration: none; color: var(--muted); }
+.to-top:hover { color: #111; }
+
+.item { margin-top: 10px; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tight { margin-top: 8px; }
+.tight li { margin: 4px 0; }
+
+.pubs { padding-left: 18px; }
+.pub-title { font-weight: 650; }
+.pub-links { margin-top: 4px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.footer {
+  padding: 10px 0 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 720px) {
+  .header { align-items: flex-start; }
+  .avatar { width: 72px; height: 72px; }
+  .grid { grid-template-columns: 1fr; }
+  .columns { grid-template-columns: 1fr; }
+}
