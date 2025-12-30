@@ -29,8 +29,8 @@ a:hover { text-decoration-thickness: 2px; }
   margin-bottom: 12px;
 }
 .avatar {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 12px;   /* or 50% for a circle */
   object-fit: cover;
 }
