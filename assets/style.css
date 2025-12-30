@@ -2,18 +2,19 @@
   --maxw: 980px;
   --pad: 18px;
 
-  /* Subtle color system (change --accent to whatever you like) */
-  --bg: #fbfcff;
-  --panel: #ffffff;
+  /* Always-light palette */
+  --bg: #fff6f1;          /* subtle peach */
+  --panel: rgba(255,255,255,0.78);
   --text: #0f172a;
   --muted: #475569;
-  --border: #e5e7eb;
+  --border: #dbe7ff;      /* light blue-ish border */
 
-  --accent: #2563eb;     /* blue */
-  --accent-2: #7c3aed;   /* purple */
+  --accent: #2563eb;
+  --accent-2: #60a5fa;
   --accent-soft: rgba(37, 99, 235, 0.10);
   --shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
 }
+
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -27,12 +28,13 @@ body{
   line-height: 1.6;
   color: var(--text);
 
-  /* subtle background tint */
+  /* subtle peach + very light blue tint */
   background:
-    radial-gradient(900px 400px at 15% -10%, rgba(37,99,235,0.10), transparent 60%),
-    radial-gradient(900px 400px at 85% 0%, rgba(124,58,237,0.08), transparent 55%),
+    radial-gradient(900px 420px at 18% -10%, rgba(37,99,235,0.10), transparent 60%),
+    radial-gradient(900px 420px at 85% 0%, rgba(96,165,250,0.10), transparent 55%),
     var(--bg);
 }
+
 
 a{
   color: var(--accent);
@@ -109,10 +111,17 @@ h1{
 /* Dividers (prettier than plain hr) */
 hr{
   border: none;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(15,23,42,0.18), transparent);
+  height: 2px; /* slightly bolder */
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(37, 99, 235, 0.45),
+    rgba(96, 165, 250, 0.45),
+    transparent
+  );
   margin: 22px 0;
 }
+
 
 /* Section headings */
 .section-head{
@@ -223,8 +232,4 @@ ul{ padding-left: 18px; }
   .columns{ grid-template-columns: 1fr; }
 }
 
-/* Optional: dark mode (subtle) */
-@media (prefers-color-scheme: dark){
-  :root{ --bg: #0b1220; }
-}
 
