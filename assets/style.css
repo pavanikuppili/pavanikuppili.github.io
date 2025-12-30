@@ -29,10 +29,10 @@ a:hover { text-decoration-thickness: 2px; }
   margin-bottom: 12px;
 }
 .avatar {
-  width: 92px; height: 92px;
-  border-radius: 10px;
+  width: clamp(110px, 12vw, 190px);
+  height: clamp(110px, 12vw, 190px);
+  border-radius: 12px;
   object-fit: cover;
-  border: 1px solid var(--border);
 }
 h1 { margin: 0 0 6px; font-size: 2rem; }
 .subtitle { margin: 0 0 6px; }
