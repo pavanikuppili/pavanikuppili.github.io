@@ -225,22 +225,6 @@ ul{ padding-left: 18px; }
 
 /* Optional: dark mode (subtle) */
 @media (prefers-color-scheme: dark){
-  :root{
-    --bg: #070a12;
-    --panel: #0b1220;
-    --text: #e5e7eb;
-    --muted: #a1a1aa;
-    --border: rgba(255,255,255,0.12);
-    --accent-soft: rgba(37, 99, 235, 0.18);
-    --shadow: 0 10px 30px rgba(0,0,0,0.35);
-  }
-  body{
-    background:
-      radial-gradient(900px 400px at 15% -10%, rgba(37,99,235,0.22), transparent 60%),
-      radial-gradient(900px 400px at 85% 0%, rgba(124,58,237,0.18), transparent 55%),
-      var(--bg);
-  }
-  .header, .pubs li, .card{
-    background: rgba(11,18,32,0.72);
-  }
+  :root{ --bg: #0b1220; }
 }
+
