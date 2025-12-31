@@ -46,12 +46,13 @@
         <h2>About me</h2>
         <a class="to-top" href="#top" aria-label="Back to top">↑</a>
       </div>
+      <p>Hi there!</p>
       <p>
-        Pavani Kuppili is a third-year PhD student at the University of Utah, advised by Prof. Robert Ricci. Her primary
+        My name is Pavani Kuppili, a third-year PhD student at the University of Utah, advised by Prof. Robert Ricci. My primary
         research interests are broadly in the areas of Programmable Networks, Data Center Networking, and Network
-        Measurements. She is actively working on programming Tofino switches and FPGA-SmartNICs using P4. She
-        collaborates with Prof. Michael Zink at the University of Massachusetts, Amherst, and Prof. Miriam Leeser at
-        Northeastern University
+        Measurements. I am actively working on programming Tofino switches and FPGA-SmartNICs using P4. I
+        collaborate with Prof. Michael Zink at the University of Massachusetts, Amherst, and Prof. Miriam Leeser at
+        Northeastern University.
       </p>
       <ul class="tight">
         <li><b>Interests:</b>• Programmable Networks • Datacenter Networking • Measurement • SmartNICs • Distrubuted SDNs • Network Offloading ML workloads</li>
@@ -66,45 +67,16 @@
         <h2>Research</h2>
         <a class="to-top" href="#top" aria-label="Back to top">↑</a>
       </div>
-
-      <div class="item">
-        <h3>Topocloud: Getting Datacenter Network Experiments Into the Right Shape</h3>
-        <p >Use a Tofino switch as a configurable “virtual wire” / L2 fabric to realize desired 
-          experiment topologies without physical rewiring.</p>
-        <ul>
-          <li>Datacenter topology strongly affects latency, bisection bandwidth, where 
-            congestion happens, and failure tolerance, but it’s hard to control topology in 
-            experiments (you usually get “whatever topology exists,” and rewiring doesn’t scale).
-          </li>
-          <li>A shared public testbed where experimenters can reconfigure topology on demand, 
-            iterating across topologies as easily as they iterate across host counts.</li>
-          <li><a href="https://ieeexplore.ieee.org/abstract/document/10858558">paper</a> </li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <h3>A Measurement Framework for P4 Processing Latency on FPGA-based SmartNICs</h3>
-        <p >Measuring P4 dataplane latency on FPGA SmartNICs is hard because many 
-          FPGA NICs don’t expose a host-visible PHC and PTP sync can be unreliable/complex.</p>
-        <ul>
-          <li>Designed and developed a PHC-free, clock-independent RTT measurement prototype: route packets 
-            through controlled loopback paths so they return to the same sender machine, 
-            enabling RTT measurement without synchronized clocks.
-          </li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <h3>Tofino-Dummynet</h3>
-        <p>Dummynet versions were developed for Wide Area Networks (WAN) but were 
-          never developed for Datacenter Networks. There are FreeBSD based in-kernel implementations 
-        that supported ms range latencty at lower throughpout</p>
-        <ul>
-          <li>Developed a Tofino version of Dummynet with more precise latency manipulation of packets at near line rate 
-            latency.
-          </li>
-        </ul>
-      </div>
+      <p> I build high-performance, resilient datacenter networks by programming Tofino switch ASICs 
+        and FPGA-SmartNICs in P4. I also have a soft spot for very large network logs—digging through them, 
+        tweaking measurement knobs, and seeing what the data is trying to confess. <br>
+        My research ideas include but not limited to: implementing ML models on SDN devices(eg., Tofino, BlueField SmartNICs) 
+        and evaluate performance; 
+        offloading ML workloads to SDN devices. For examples offloading certain aggregation tasks to SDN devices to 
+        improve distributed ML training. <br>
+        If you’re exploring anything in this space (or have a wild idea that might work), 
+        I’m always happy to collaborate.
+      </p>
     </section>
 
     <hr />
@@ -158,25 +130,19 @@
 
       <div class="item">
         <div class="row">
-          <h3>Company / Org</h3>
-          <span class="muted">City · 2024–Present</span>
+          <h3>University of Utah</h3>
+          <span class="muted">Salt Lake CIty · August 2023 – Present</span>
         </div>
-        <p class="muted">Role — Team / Area</p>
-        <ul>
-          <li>Impact bullet (what you built, scale, outcomes).</li>
-          <li>Impact bullet.</li>
-        </ul>
+        <p>Research Assistant - Flux Research Group</p>
       </div>
 
       <div class="item">
         <div class="row">
-          <h3>Company / Org</h3>
-          <span class="muted">2022–2024</span>
+          <h3>University of Massachusetts at Amherst</h3>
+          <span class="muted">May 2024 – August 2024</span>
+          <span class="muted">May 2025 – August 2025</span>
         </div>
-        <p class="muted">Role</p>
-        <ul>
-          <li>Impact bullet.</li>
-        </ul>
+        <p >Cloud Testbed Development Intern </p>
       </div>
     </section>
 
@@ -192,19 +158,17 @@
       <div class="grid">
         <div class="card">
           <h3>Programming</h3>
-          <p class="muted">Python, C/C++, …</p>
+          <p class="muted">P4, Python, C, Bash, Shell, Java, Go, OpenMP, CUDA, MPI, JavaScript, MySql, HTML, CSS</p>
         </div>
         <div class="card">
-          <h3>Systems</h3>
-          <p class="muted">Linux, Docker, …</p>
+          <h3>Systems/Networks</h3>
+          <p class="muted">Tofino, Vitis Networking P4, Xilinx Open-NIC-Shell, Linux, AWS, Docker, GitHub, Network Monitoring, 
+            Network Performance
+          , Firewalls, Virtualization, OS Logging, Authentication, GNS3, Wireshark</p>
         </div>
         <div class="card">
-          <h3>Networking</h3>
-          <p class="muted">P4, Tofino, DPDK, …</p>
-        </div>
-        <div class="card">
-          <h3>ML / Data</h3>
-          <p class="muted">PyTorch, Spark, …</p>
+          <h3>ML</h3>
+          <p class="muted">Core ML, Supervised learning, Ensemble methods, Neural Networks, Sklearn, Evaluation, JupyterLab</p>
         </div>
       </div>
     </section>
@@ -219,9 +183,11 @@
       </div>
 
       <ul>
-        <li><b>Award / Scholarship</b> — Org, Year. (1-line context)</li>
-        <li><b>Best Paper / Poster / Talk</b> — Venue, Year.</li>
-        <li><b>Fellowship / Recognition</b> — Year.</li>
+        <li><b>Artifact Evaluation Committee, ICPE 2026</b> — Florence, Italy, 2026</li>
+        <li><b>Member ShadowPC, EuroSys 2024</b> - Athens, Greece, 2024 </li>
+        <li><b>Quarter Superstar AWS</b> — Amazon Web Services, India, 2020</li>
+        <li><b>AWS Solutions Architect-Associate </b> — 2020</li>
+      
       </ul>
     </section>
 
@@ -236,14 +202,17 @@
 
       <div class="columns">
         <ul>
-          <li>Course A (School / Platform)</li>
-          <li>Course B</li>
-          <li>Course C</li>
+          <li>Machine Learning(CS 6350) - Spring 2025</li>  
         </ul>
         <ul>
-          <li>Course D</li>
-          <li>Course E</li>
-          <li>Course F</li>
+          <li>Advanced Computer Networks(CS 6480) - Fall 2023</li>
+          <li>Software and System Security(CS 6956) - Spring 2023</li>
+          <li>Software Verification(CS 6110) - Spring 2023</li>   
+        </ul>
+        <ul>
+          <li>Distributed Systems(CS 6450) - Fall 2022</li>
+          <li>Parallel Programming(CS 6230) - Fall 2022</li>
+          <li>Computer Architecture(CS 6810) - Fall 2022</li>
         </ul>
       </div>
     </section>
@@ -258,12 +227,14 @@
       </div>
 
       <p>
-        A sentence or two. You can also list:
+        
       </p>
       <ul class="tight">
+        <!--
         <li>Hobby 1</li>
         <li>Hobby 2</li>
         <li>Hobby 3</li>
+        -->
       </ul>
     </section>
 
