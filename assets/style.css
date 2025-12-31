@@ -124,6 +124,14 @@ hr{
   margin: 22px 0;
 }
 
+/* Section panels */
+section{
+  background: rgba(219, 231, 255, 0.4);
+  border: 1px solid rgba(219, 231, 255, 0.8);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.06);
+}
 
 /* Section headings */
 .section-head{
