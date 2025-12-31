@@ -90,25 +90,27 @@ h1{
   margin: 14px 0 18px;
 }
 
+/* Top section headings list (nav) — faint blue pills */
 .nav a{
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid transparent;
-  background: transparent;
-  color: var(--text);
-}
-
-.nav a:hover{
-  background: var(--accent-soft);
-  border-color: rgba(37,99,235,0.18);
+  background: rgba(37, 99, 235, 0.08);     /* faint blue */
+  border: 1px solid rgba(37, 99, 235, 0.14);
+  color: #0f172a;
   text-decoration: none;
 }
 
-/* your script toggles .active */
-.nav a.active{
-  background: linear-gradient(90deg, rgba(37,99,235,0.18), rgba(124,58,237,0.16));
-  border-color: rgba(37,99,235,0.25);
+.nav a:hover{
+  background: rgba(37, 99, 235, 0.12);
+  border-color: rgba(37, 99, 235, 0.22);
 }
+
+/* If you're using the JS that adds .active to the current section */
+.nav a.active{
+  background: rgba(37, 99, 235, 0.18);
+  border-color: rgba(37, 99, 235, 0.30);
+}
+
 
 /* Dividers (prettier than plain hr) */
 hr{
@@ -124,13 +126,13 @@ hr{
   margin: 22px 0;
 }
 
-.section-head h2{
-  display: inline-block;
-  margin: 0;
-  padding: 6px 12px;
-  border-radius: 12px;
-  background: rgba(37, 99, 235, 0.10);   /* subtle blue */
-  border: 1px solid rgba(37, 99, 235, 0.16);
+
+/* Section headings */
+.section-head{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 h2{
@@ -233,5 +235,4 @@ ul{ padding-left: 18px; }
   .grid{ grid-template-columns: 1fr; }
   .columns{ grid-template-columns: 1fr; }
 }
-
 
